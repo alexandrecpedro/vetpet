@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap%27');
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    
+
+}
+
+/* ================== HEADER ======================= */
+
+.logo{
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: purple;
+    transform: scale(1.08);
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+}
+
+ul li a.nav-link{
+    transition: all 0.5s;
+}
+

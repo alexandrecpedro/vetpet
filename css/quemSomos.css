@@ -1,0 +1,178 @@
+body{
+    overflow-x: hidden ;
+    background: #231F20 ;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh 
+}
+
+main::before{
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgb(221, 15, 15);
+    color: cornflowerblue;
+    text-shadow: 0 5px 5px #000000b8;
+}
+
+
+main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 121px);
+}
+
+.perfil{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+   transition: 0.5s;   
+}
+
+
+
+.perfil .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.perfil .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+
+
+.perfil:hover .circle::before{
+    clip-path: circle(400px at center);
+    border-radius: 15px;    
+
+}
+
+.perfil img{
+    clip-path: circle();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 276px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+a.redes{
+    transition: 0.4s;
+}
+
+a.redes:hover{
+    transform: scale(1.3);
+}
+
+img.thaisa, img.andre{
+    height: 375px;
+}
+
+.perfil:hover img{
+    left: 72%;
+    height: 200px;
+}
+
+.perfil .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding:  20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.perfil:hover .content
+{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+.perfil .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.perfil .content p {
+    color: #fff;
+}
+
+.perfil .content a.redes {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #111;
+    margin-top:  10px;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+
+
+
+@media (max-width: 1100px){
+    .perfil{
+        width: auto;
+        max-width: 80%;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    .perfil:hover{
+        height: 600px;
+
+    }
+
+    .perfil .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .perfil:hover img{
+        top:70%;
+        left: 50%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 420px){
+    .perfil .content{
+       
+        padding: 20px;
+    }
+
+}
