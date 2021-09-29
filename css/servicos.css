@@ -1,8 +1,7 @@
 .card {
     border-radius: 20px;
     transition: 0.5s;
-    filter: opacity(100%);
-   
+    filter: opacity(100%);  
 }
 
 
@@ -14,6 +13,4 @@ div.card:hover{
     transform: scale(1.025);
     filter: opacity(80%) drop-shadow(5px 5px 8px gray) ;
     z-index: 1;
-    
-    
 }

@@ -18,12 +18,11 @@ main::before{
     text-shadow: 0 5px 5px #000000b8;
 }
 
-
 main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 121px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 121px);
 }
 
 .perfil{
@@ -33,10 +32,8 @@ main{
     border-radius: 20px;
     display: flex;
     align-items: center;
-   transition: 0.5s;   
+    transition: 0.5s;   
 }
-
-
 
 .perfil .circle{
     position: absolute;
@@ -58,8 +55,6 @@ main{
     transition: 0.5s;
 }
 
-
-
 .perfil:hover .circle::before{
     clip-path: circle(400px at center);
     border-radius: 15px;    
@@ -76,6 +71,7 @@ main{
     pointer-events: none;
     transition: 0.5s;
 }
+
 a.redes{
     transition: 0.4s;
 }
@@ -101,16 +97,12 @@ img.thaisa, img.andre{
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
-
 }
 
-
-.perfil:hover .content
-{
+.perfil:hover .content{
     left: 0;
     opacity: 1;
     visibility: visible;
-    
 }
 
 
@@ -120,7 +112,6 @@ img.thaisa, img.andre{
     font-size: 2rem;
     line-height: 1em;
     margin-bottom: 5px;
-
 }
 
 .perfil .content p {
@@ -137,11 +128,7 @@ img.thaisa, img.andre{
     display: inline-block;
     font-weight: 700;
     text-decoration: none;
-
 }
-
-
-
 
 @media (max-width: 1100px){
     .perfil{
@@ -153,7 +140,6 @@ img.thaisa, img.andre{
 
     .perfil:hover{
         height: 600px;
-
     }
 
     .perfil .content{
@@ -171,8 +157,6 @@ img.thaisa, img.andre{
 
 @media (max-width: 420px){
     .perfil .content{
-       
         padding: 20px;
     }
-
 }
