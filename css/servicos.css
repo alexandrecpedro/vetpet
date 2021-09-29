@@ -11,6 +11,6 @@
 
 div.card:hover{
     transform: scale(1.025);
-    filter: opacity(80%) drop-shadow(5px 5px 8px gray) ;
+    filter: opacity(80%) drop-shadow(5px 5px 8px gray);
     z-index: 1;
 }

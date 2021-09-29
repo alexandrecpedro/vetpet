@@ -1,8 +1,7 @@
 body{
-    overflow-x: hidden ;
-    background: #231F20 ;
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh 
+    overflow-x: hidden;
+    background: #231F20;
+    height: 100vh;
 }
 
 main::before{
